@@ -1,0 +1,92 @@
+.register {
+  position: relative;
+  background: linear-gradient(
+    to left,
+    var(--registercolor),
+    rgba(255, 255, 0, 0.741)
+  );
+  height: 100vh;
+  .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    min-height: 70%;
+    margin: auto;
+    display: flex;
+    box-sizing: border-box;
+    .left {
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      width: 50%;
+      background: white;
+      //   background: white;
+      background-blend-mode: multiply;
+      padding: 50px;
+      h1 {
+        font-size: 25px;
+        margin-bottom: 15px;
+        color: #747070;
+        font-weight: 800;
+      }
+
+      input {
+        border: none;
+        border-bottom: 1px solid gray;
+        padding: 8px 5px;
+        margin: 5px 0 20px 0;
+        width: 100%;
+        &:focus {
+          outline: 1px var(--registercolor) solid;
+          box-shadow: 1px 1px 1px 1px;
+        }
+      }
+      button {
+        padding: 7px;
+        width: 50%;
+        margin-top: 12px;
+        background-color: var(--registercolor);
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+    }
+    .right {
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      background: linear-gradient(#a6f2fc85, gray),
+        url(../images/login.avif) no-repeat center/cover;
+      width: 50%;
+      color: white;
+      padding: 50px;
+      button {
+        padding: 6px;
+        width: 50%;
+        margin-top: 12px;
+        font-weight: bold;
+        color: var(--registercolor);
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        // color: white;
+        cursor: pointer;
+        transition-duration: 0.2s;
+        &:hover {
+          color: white;
+          background-color: var(--registercolor);
+          border: none;
+        }
+      }
+      p {
+        margin: 20px 0 40px 0;
+      }
+      h1 {
+        margin: 25px 0 30px;
+        font-size: 50px;
+      }
+    }
+  }
+}
