@@ -3,7 +3,7 @@
   background: linear-gradient(
     to left,
     var(--registercolor),
-    rgba(255, 255, 0, 0.741)
+    #03A9F4
   );
   height: 100vh;
   .card {
@@ -20,6 +20,7 @@
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
       width: 50%;
+
       background: white;
       //   background: white;
       background-blend-mode: multiply;
@@ -33,7 +34,7 @@
 
       input {
         border: none;
-        border-bottom: 1px solid gray;
+        border-bottom: 1px solid lightgray;
         padding: 8px 5px;
         margin: 5px 0 20px 0;
         width: 100%;

@@ -1,6 +1,21 @@
-*{
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-    font-family: sans-serif;
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
+.applogo {
+  position: absolute;
+  background: url(https://i.pinimg.com/originals/3e/cc/02/3ecc022c61823319ffe9437aee1d3dcc.gif)
+    no-repeat center/cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  z-index: 9999;
+  top: 15px;
+  left: 15px;
+  /* box-shadow: 0px 0px 0px 2px var(--mainColor) ; */
+  filter: drop-shadow(0px 0px 1px);
+}
+

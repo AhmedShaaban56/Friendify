@@ -1,6 +1,7 @@
 .login {
   position: relative;
-  background:linear-gradient(to left ,var(--mainColor)  ,rgba(157, 255, 0, 0.741));  height: 100vh;
+  background: linear-gradient(to bottom, var(--mainColor), #4caf50, #4caf50);
+  height: 100vh;
   .card {
     position: absolute;
     top: 50%;

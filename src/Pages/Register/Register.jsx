@@ -5,6 +5,7 @@ const Register = () => {
   return (
     <div className="register">
       <div className="card">
+        
         {/* right side of login page */}
         <section className="left">
           <h1>Resgister</h1>
