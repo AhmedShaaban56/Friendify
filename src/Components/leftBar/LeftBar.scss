@@ -1,0 +1,46 @@
+.leftBar {
+  flex: 2;
+  height: calc(100vh - 50px);
+  position: sticky;
+  top: 50px;
+  //   height: 100%;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100%;
+    // flex-grow: 1;
+
+    hr {
+      height: 0.5px;
+      border: none;
+      background-color: lightgray;
+    }
+    section {
+      padding-inline: 5px;
+      flex-grow: 1;
+      p {
+        padding-top: 12px;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-block: 12px;
+        cursor: pointer;
+
+        img {
+          width: 25px;
+          height: 25px;
+          object-fit: cover;
+        }
+        span {
+          font-size: 13px;
+        }
+      }
+    }
+  
+  }
+}

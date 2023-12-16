@@ -6,10 +6,12 @@ import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
-import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+// import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 
 const Navbar = () => {
   return (
+    <div className="navbar">
+
     <div className="container">
       <div className="left">
         <h1>Friendify</h1>
@@ -33,6 +35,7 @@ const Navbar = () => {
           <span>Ahmed Shaaban</span>
         </div>
       </div>
+    </div>
     </div>
   );
 };
