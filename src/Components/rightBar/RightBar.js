@@ -47,10 +47,10 @@ const RightBar = () => {
                 style={{ borderRadius: "50%" }}
               />
               <span>Jone Alice</span>
-              <span className="action">changes his profile pic</span>
+              <span className="action">changed his profile pic</span>
             </div>
             <div>
-              <p>1 min ago</p>
+              <span className="action">1 min ago</span>
             </div>
           </div>
           <div className="item">
@@ -64,7 +64,7 @@ const RightBar = () => {
               <span className="action">new post</span>
             </div>
             <div>
-              <p>5 min ago</p>
+              <span className="action">5 min ago</span>
             </div>
           </div>
           <div className="item">
@@ -75,10 +75,38 @@ const RightBar = () => {
                 style={{ borderRadius: "50%" }}
               />
               <span>Lucas Biden</span>
-              <span className="action">changes his profile pic</span>
+              <span className="action">live streaming</span>
             </div>
             <div>
-              <p>10 min ago</p>
+              <span className="action">10 min ago</span>
+            </div>
+          </div>
+          <div className="item">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVyc29ufGVufDB8fDB8fHww"
+                alt=""
+                style={{ borderRadius: "50%" }}
+              />
+              <span>Lucas Biden</span>
+              <span className="action">live streaming</span>
+            </div>
+            <div>
+              <span className="action">10 min ago</span>
+            </div>
+          </div>
+          <div className="item">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVyc29ufGVufDB8fDB8fHww"
+                alt=""
+                style={{ borderRadius: "50%" }}
+              />
+              <span>Lucas Biden</span>
+              <span className="action">live streaming</span>
+            </div>
+            <div>
+              <span className="action">10 min ago</span>
             </div>
           </div>
         </section>
@@ -99,21 +127,61 @@ const RightBar = () => {
           <div className="item">
             <div>
               <img
-                src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnN8ZW58MHx8MHx8fDA%3D"
+                src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
                 style={{ borderRadius: "50%" }}
               />
-              <span>Benzema</span>
+              <span>Alexandra</span>
             </div>
           </div>
           <div className="item">
             <div>
               <img
-                src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnN8ZW58MHx8MHx8fDA%3D"
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
                 style={{ borderRadius: "50%" }}
               />
-              <span>Benzema</span>
+              <span>Carla</span>
+            </div>
+          </div>
+          <div className="item">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                style={{ borderRadius: "50%" }}
+              />
+              <span>Carla</span>
+            </div>
+          </div>
+          <div className="item">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                style={{ borderRadius: "50%" }}
+              />
+              <span>Carla</span>
+            </div>
+          </div>
+          <div className="item">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                style={{ borderRadius: "50%" }}
+              />
+              <span>Carla</span>
+            </div>
+          </div>
+          <div className="item">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                style={{ borderRadius: "50%" }}
+              />
+              <span>Carla</span>
             </div>
           </div>
         </section>

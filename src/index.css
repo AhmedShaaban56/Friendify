@@ -12,6 +12,10 @@ body {
 :root {
   --mainColor: #12B48E;
   --registercolor:#19A2D1;
+  /* filter: invert(100%); */
   /* --white: #ffffff; */
+}
+* a{
+  text-decoration: none;
 }
 

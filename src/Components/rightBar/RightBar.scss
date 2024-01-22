@@ -1,88 +1,120 @@
+@import "../../style.scss";
+
 .rightBar {
-  flex: 3;
-  height: calc(100vh - 50px);
-  position: sticky;
-  top: 50px;
-  //   background-color: gray;
-  .container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-
-    section {
-      padding: 10px 12px;
-      border-radius: 5px;
-      height: 30%;
-      flex-grow: 1;
-      background-color: white;
-      margin-block: calc(10% / 6);
-      margin-inline: 10px;
-      overflow: auto;
-      .item {
-        display: flex;
-        justify-content: space-between;
-        margin-block: 10px;
-        cursor: pointer;
-
-        div {
+  @include themify($themes) {
+    flex: 3;
+    height: calc(100vh - 50px);
+    position: sticky;
+    top: 50px;
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      background-color: themed("bgSoft");
+      section {
+        padding: 0px 12px 5px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+          rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        // border-radius: 5px;
+        height: 30%;
+        flex-grow: 1;
+        background-color: themed(bg);
+        color: themed(textColor);
+        margin-block: calc(10% / 6);
+        margin-right: 10px;
+        overflow: auto;
+        &::-webkit-scrollbar {
+          width: 5px;
+        }
+        &::-webkit-scrollbar-track {
+          background-color: gray;
+          border-radius: 5px;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: #6721ca;
+          border-radius: 5px;
+        }
+        .item {
           display: flex;
-          align-items: center;
-          gap: 10px;
-          button {
-            padding: 5px 10px;
-            background-color: white;
-            border: 2px solid rgb(35, 155, 230);
-            // border: none;
-            border-radius: 3px;
-            color: black;
-            cursor: pointer;
-            transition: 0.2s;
-            transition-timing-function: linear;
-          }
-          button:nth-child(1):hover {
-            background-color: rgb(35, 155, 230);
-            // border: none;
-            color: white;
-          }
-          button:nth-child(2) {
-            border: 2px solid rgb(219, 79, 79) !important;
-          }
-          button:nth-child(2):hover {
-            background-color: rgb(219, 79, 79);
-            color: white;
+          justify-content: space-between;
+          margin-block: 10px;
+          cursor: pointer;
+
+          div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            button {
+              padding: 3px 5px;
+              background-color: themed(bg);
+              border: 2px solid rgb(35, 155, 230);
+              // border: none;
+              border-radius: 3px;
+              color: themed(textColor);
+              cursor: pointer;
+              transition: 0.2s;
+              transition-timing-function: linear;
+            }
+            button:nth-child(1):hover {
+              background-color: rgb(35, 155, 230);
+              // border: none;
+              color: white;
+            }
+            button:nth-child(2) {
+              border: 2px solid rgb(219, 79, 79) !important;
+            }
+            button:nth-child(2):hover {
+              background-color: rgb(219, 79, 79);
+              color: white;
+            }
           }
         }
+        p {
+          padding-block: 10px;
+          position: sticky;
+          top: 0px;
+          width: 100%;
+          background-color: themed(bg);
+          border-bottom: 1px solid themed(border);
+          z-index: 1;
+        }
+        img {
+          width: 35px;
+          height: 35px;
+          object-fit: cover;
+        }
+        span {
+          font-size: 14px;
+        }
+        .action {
+          color: #9f9999;
+        }
       }
-      p {
-        margin-block: 10px;
-      }
-      img {
-        width: 35px;
-        height: 35px;
-        object-fit: cover;
-      }
-      span {
-        font-size: 14px;
-      }
-      .action {
-        color: #9f9999;
-      }
-    }
-    section.online {
-      .item {
-        div {
-          span {
-            position: relative;
-            &::before {
-              content: "";
-              width: 8px;
-              height: 8px;
-              border-radius: 50%;
-              background-color: green;
-              position: absolute;
-              top: -3px;
-              left: -20px;
-              z-index: 1; // Adjusted z-index for better layering
+      section.online {
+        padding: 0px 10px 5px;
+
+        > p {
+          padding-block: 10px;
+          position: sticky;
+          top: 0px;
+          width: 100%;
+          background-color: themed(bg);
+          // border-bottom: 1px solid lightgray;
+          z-index: 1;
+        }
+        .item {
+          div {
+            span {
+              position: relative;
+              &::before {
+                content: "";
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: rgb(12, 207, 12);
+                position: absolute;
+                left: 100%;
+              }
             }
           }
         }

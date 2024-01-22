@@ -1,47 +1,13 @@
 import React from "react";
+import "./Home.scss";
+import Stories from "../../Components/stories/Stories";
+import Posts from "../../Components/posts/Posts";
 
 const Home = () => {
   return (
-    <div>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
-      <h1>hello home</h1>
+    <div className="homePage">
+      <Stories />
+      <Posts />
     </div>
   );
 };

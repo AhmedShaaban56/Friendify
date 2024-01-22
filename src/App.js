@@ -11,9 +11,11 @@ import Register from "./Pages/Register/Register";
 import Layout from "./Pages/Layout/Layout";
 import Profile from "./Pages/Profile/Profile";
 import Home from "./Pages/Home/Home";
+import { useContext } from "react";
+import { AuthContext } from "./Context/AuthContext";
 
 function App() {
-  const currentUser = true;
+  const { currentUser } = useContext(AuthContext);
 
   const ProtectedRoute = () => {
     if (!currentUser) {
