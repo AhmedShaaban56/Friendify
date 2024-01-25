@@ -8,44 +8,48 @@
       .post {
         background-color: themed("bg");
         margin-block: 15px;
-        border-radius: 5px;
-        padding: 10px;
+        border-radius: 8px;
+        padding: 15px;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         .userInfo {
           display: flex;
           justify-content: space-between;
           align-items: center;
           margin-bottom: 15px;
-          div {
+          .userNameImg {
             display: flex;
             align-items: center;
             gap: 10px;
-            p{
-                font-weight: 600;
-                span{
-                    color: themed("textColorSoft");
-                    font-weight: normal;
-                    font-size: 13px;
-                }
+            p {
+              font-weight: 600;
+              color: themed(textColor);
+              span {
+                color: themed("textColorSoft");
+                font-weight: normal;
+                font-size: 13px;
+              }
             }
           }
         }
         .postcontent {
-        //   padding: 10px;
-          .postText{
+          //   padding: 10px;
+          .postText {
             padding-block: 10px;
           }
-          
         }
         .interactions {
           display: flex;
-          gap: 10px;
+          gap: 20px;
           align-items: center;
           padding-block: 10px;
           .react {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 5px;
+            cursor: pointer;
+            span {
+              font-size: 14px;
+            }
           }
         }
       }

@@ -10,10 +10,9 @@ import { AuthContext } from "../../Context/AuthContext";
 const Layout = () => {
   const { darkMode } = useContext(themeContext);
   const { login } = useContext(AuthContext);
-  const userDataUpdate = () => {
-    login();
-  };
-  console.log(darkMode);
+  // const userDataUpdate = () => {
+  //   login();
+  // };
   return (
     <div className={`theme-${darkMode ? "dark" : "light"}`} id="layoutpage">
       <Navbar />

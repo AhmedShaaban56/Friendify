@@ -10,19 +10,21 @@ import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNone
 import { useContext } from "react";
 import { themeContext } from "../../Context/DarkModeContext";
 import { AuthContext } from "../../Context/AuthContext";
+import { Link } from "react-router-dom";
 // import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 
 const Navbar = () => {
   const { toggle, darkMode } = useContext(themeContext);
   const pointer = { cursor: "pointer" };
-  const { currentUser} = useContext(AuthContext);
-  
+  const { currentUser } = useContext(AuthContext);
+
   return (
     <div className="navbar">
-      
       <div className="container">
         <div className="left">
-          <h1>Friendify</h1>
+          <Link to="/">
+            <h1>Friendify</h1>
+          </Link>
           <HomeOutlinedIcon />
           {darkMode ? (
             <LightModeOutlinedIcon style={pointer} onClick={toggle} />

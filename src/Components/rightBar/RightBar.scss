@@ -23,15 +23,16 @@
         margin-block: calc(10% / 6);
         margin-right: 10px;
         overflow: auto;
+        border-radius: 10px;
         &::-webkit-scrollbar {
-          width: 5px;
+          width: 3px;
         }
         &::-webkit-scrollbar-track {
-          background-color: gray;
+          background-color: themed(bg);
           border-radius: 5px;
         }
         &::-webkit-scrollbar-thumb {
-          background-color: #6721ca;
+          background-color: themed(logo);
           border-radius: 5px;
         }
         .item {

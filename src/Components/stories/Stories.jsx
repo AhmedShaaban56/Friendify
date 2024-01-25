@@ -37,7 +37,7 @@ const Stories = () => {
           </div>
           {storiesData.map((story) => (
             <div className="story" key={story.id}>
-              <img src={story.img} alt="" srcset="" />
+              <img src={story.img} alt="" srcSet="" />
               <span>{story.name}</span>
             </div>
           ))}

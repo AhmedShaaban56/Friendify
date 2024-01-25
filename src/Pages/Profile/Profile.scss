@@ -1,3 +1,86 @@
-.profile{
-    
+@import "../../style.scss";
+
+.profile {
+  @include themify($themes) {
+    background-color: themed(bgSoft);
+    height: 100%;
+    color: themed(textColor);
+    .container {
+      margin: auto;
+      width: 100%;
+      .ProfileImages {
+        position: relative;
+        .background {
+          //   width: 95%;
+
+          max-height: 230px;
+          border-bottom-right-radius: 5px;
+          border-bottom-left-radius: 5px;
+          object-fit: cover;
+        }
+        .profilePic {
+          object-fit: cover;
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          position: absolute;
+          left: 50%;
+          bottom: -50%;
+          transform: translate(-50%, -25%);
+          //   border-bottom: 2px solid gray;
+        }
+      }
+      .profileInfo {
+        min-height: 250px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding-inline: 50px;
+        align-items: center;
+        align-content: center;
+        width: 90%;
+        border-radius: 10px;
+        background-color: themed(bg);
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin: 10px auto;
+
+        .socials {
+          flex: 1;
+          .icon {
+            margin-inline: 5px;
+            // cursor:pointer ;
+            font-size: 30px;
+            color: themed(textColorSoft);
+          }
+        }
+        .personalData {
+          flex: 1;
+          margin-inline: 50px;
+          p {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+          }
+          button {
+            padding: 5px 15px;
+            font-size: 17px;
+            font-weight: 500;
+            border: none;
+            color: white;
+            cursor: pointer;
+            outline: 1px solid white;
+
+            background-color: darkblue;
+          }
+        }
+        .setting {
+          svg {
+            margin-left: 50px;
+            cursor: pointer;
+          }
+          flex: 1;
+        }
+      }
+    }
+  }
 }
