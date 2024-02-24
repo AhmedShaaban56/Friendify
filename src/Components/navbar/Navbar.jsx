@@ -25,7 +25,9 @@ const Navbar = () => {
           <Link to="/">
             <h1>Friendify</h1>
           </Link>
-          <HomeOutlinedIcon />
+          <Link to="/" className="homeIcon">
+            <HomeOutlinedIcon />
+          </Link>
           {darkMode ? (
             <LightModeOutlinedIcon style={pointer} onClick={toggle} />
           ) : (

@@ -19,12 +19,12 @@ const Profile = () => {
             alt=""
             width={"100%"}
             className="background"
-            srcset=""
+            srcSet=""
           />
           <img
             src="https://ilkha.com/img/NewsGallery/2023/1/5/307363/FeaturedImage/c4bb7ebb-f328-4852-8047-316d687a7f8a.jpg"
             alt=""
-            srcset=""
+            srcSet=""
             className="profilePic"
           />
         </div>
@@ -67,7 +67,7 @@ const Profile = () => {
             <MoreVertIcon />
           </div>
         </div>
-        <Posts myPosts={currentUser.name} />
+        <Posts />
       </div>
     </div>
   );

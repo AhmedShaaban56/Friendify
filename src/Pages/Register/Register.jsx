@@ -1,25 +1,76 @@
 import { Link } from "react-router-dom";
 import "./Resgister.scss";
+import { useNavigate } from "react-router-dom";
+import VisibilityOffOutlinedIcon from "@mui/icons-material/VisibilityOffOutlined";
+import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../Context/AuthContext";
 
 const Register = () => {
+  const navigate = useNavigate();
+
+  const [hidePassword, setHidePassword] = useState(true);
+
+  const [Name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const { Register } = useContext(AuthContext);
+  const handleRegister = (e) => {
+    e.preventDefault();
+    Register(Name, email, password);
+    navigate("/login");
+  };
+
+  // handling show-hide password
+  const showHide = () => {
+    setHidePassword(!hidePassword);
+  };
+
   return (
     <div className="register">
       <div className="card">
-        
         {/* right side of login page */}
         <section className="left">
           <h1>Resgister</h1>
           <form action="" className="loginfield">
-            <input type="text" name="" id="name" placeholder="Your Name" />
-            <input type="text" name="" id="text" placeholder="Username" />
-            <input type="email" name="" id="email" placeholder="Email" />
             <input
-              type="password"
+              type="text"
               name=""
-              id="password"
-              placeholder="password"
+              onChange={(e) => setName(e.target.value)}
+              id="name"
+              placeholder="Your Name"
             />
-            <button>Register</button>
+
+            <input
+              type="email"
+              onChange={(e) => setEmail(e.target.value)}
+              name=""
+              id="email"
+              placeholder="Email"
+            />
+            <div className="passField">
+              <input
+                type={hidePassword ? "password" : "text"}
+                name=""
+                onChange={(e) => setPassword(e.target.value)}
+                id="password"
+                placeholder="password"
+              />
+              <span>
+                {hidePassword ? (
+                  <VisibilityOffOutlinedIcon
+                    style={{ cursor: "pointer" }}
+                    onClick={showHide}
+                  />
+                ) : (
+                  <VisibilityOutlinedIcon
+                    style={{ cursor: "pointer" }}
+                    onClick={showHide}
+                  />
+                )}
+              </span>
+            </div>
+            <button onClick={handleRegister}>Register</button>
           </form>
         </section>
         {/* left side of login page */}

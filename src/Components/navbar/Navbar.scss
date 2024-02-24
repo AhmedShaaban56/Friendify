@@ -11,7 +11,7 @@
       height: 50px;
       padding: 5px 15px;
       border-bottom: 1px solid themed(border);
-      
+
       background-color: themed("bg");
       color: themed(textColor);
       // transition: all 0.5s;
@@ -23,7 +23,9 @@
 
         h1 {
           color: themed("logo");
-          // font-family:;
+        }
+        .homeIcon{
+          color: themed(textColor);
         }
 
         .search {

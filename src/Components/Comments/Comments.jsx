@@ -36,7 +36,7 @@ const Comments = () => {
               height={"40px"}
               style={{ borderRadius: "50%", objectFit: "cover" }}
               alt=""
-              srcset=""
+              srcSet=""
             />
           </Link>
           <input type="text" name="" id="" placeholder="write a comment" />
@@ -51,7 +51,7 @@ const Comments = () => {
                 height={"30px"}
                 style={{ borderRadius: "50%", objectFit: "cover" }}
                 alt=""
-                srcset=""
+                srcSet=""
               />
               <p>{comment.name}</p>
             </Link>

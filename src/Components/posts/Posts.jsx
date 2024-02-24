@@ -7,7 +7,7 @@ import SmsOutlinedIcon from "@mui/icons-material/SmsOutlined";
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 import Comments from "../Comments/Comments";
 import { Link } from "react-router-dom";
-const Posts = (probs) => {
+const Posts = () => {
   const postsData = [
     {
       id: 1,
@@ -41,6 +41,16 @@ const Posts = (probs) => {
     {
       id: 4,
       userId: 4,
+      name: "Karim Nour",
+      profilePic:
+        "https://print-s3-storage.s3.eu-west-3.amazonaws.com/products_seller/e7HO31QcpBll8NI8HlpZg1qRN13VBhBj2G4B6FzU.jpeg",
+      Postimage:
+        "https://arabicpost.net/wp-content/uploads/2020/01/egyptian-revolution.jpg",
+      desc: "ثورة 25 يناير  .. لن ننسي",
+    },
+    {
+      id: 5,
+      userId: 5,
       name: "Jack Alfred",
       profilePic: "https://pbs.twimg.com/media/GEJlO9uXkAAXQbl.jpg:large",
       Postimage: "https://i.ytimg.com/vi/f12WYfwDY_A/sddefault.jpg",
@@ -48,7 +58,7 @@ const Posts = (probs) => {
     },
   ];
   let liked = false;
-  const [commnetOpen, setCommentOpen] = useState(true);
+  const [commnetOpen, setCommentOpen] = useState(false);
   return (
     <div className="posts">
       <div className="container">
@@ -70,7 +80,7 @@ const Posts = (probs) => {
               </Link>
               <MoreHorizOutlinedIcon />
             </div>
-            <div className="postcontent">
+            <div className="postcontent" >
               <p className="postText">{post.desc}</p>
               {post.Postimage && (
                 <img
